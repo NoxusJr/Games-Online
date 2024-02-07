@@ -1,10 +1,20 @@
 from dotenv import load_dotenv,find_dotenv
 import gerenciamento_software as gs
+from os import getenv
 
-HOST = ''
-USER = ''
-PASSWORD = ''
-DATABASE = ''
+
+
+load_dotenv(find_dotenv())
+
+HOST = getenv('host')
+USER = getenv('user')
+PASSWORD = getenv('password')
+DATABASE = getenv('database')
+
+TABLE_USER = getenv('table_user')
+USER_NOME = getenv('user_nome')
+USER_EMAIL = getenv('user_email')
+USER_SENHA = getenv('user_senha')
 
 
 class Conexao:

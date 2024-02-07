@@ -8,13 +8,13 @@ class PontosUsuario(InterfacePontos):
         self.conexao = conexao
 
 
-    def registrar_ponto(self):
+    def registrar_ponto(self,email:str,pontuacao:int,jogo:int) -> bool:
         pass
 
 
-    def retornar_pontos(self):
+    def retornar_pontos(self,email:str,jogo:int,geral:bool=False) -> dict:
         pass
 
 
-    def retornar_ranking(self):
+    def retornar_ranking(self) -> dict:
         pass
